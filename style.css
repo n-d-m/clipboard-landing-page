@@ -21,9 +21,16 @@ body {
   min-height: 100vh;
 }
 
-h1,
-h2 {
+h1, h2, h3 {
   color: var(--neutral-darkBlue);
+}
+
+h2{
+  font-size: 2rem;
+}
+
+h3{
+  font-size: 1.5rem;
 }
 
 p {
@@ -234,6 +241,12 @@ footer > a > img {
     width: 55%;
   }
 
+  main>img {
+    width: 20%;
+    align-self: center;
+    margin-bottom: 40px;
+  }
+
   .download-btns {
     flex-direction: row;
     justify-content: center;
@@ -282,6 +295,11 @@ footer > a > img {
     width: 55%;
   }
 
+  #access > img{
+    width: 150%;
+    align-self: center;
+  }
+
   #supercharge {
     margin-top: -90px;
   }
@@ -303,7 +321,7 @@ footer > a > img {
     justify-content: center;
     width: 55%;
     gap: 70px;
-    margin-top: 0;
+    margin: 10px 0px;
   }
 
   #download {
