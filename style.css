@@ -91,9 +91,21 @@ main > img {
   box-shadow: 0px 4px 0px hsl(171, 65%, 39%);
 }
 
+.download-ios:hover{
+  background-color: hsl(171, 58%, 63%);
+  box-shadow: 0px 4px 0px hsla(171, 42%, 50%, 0.777);
+  cursor: pointer;
+}
+
 .download-mac {
   background-color: var(--primary-blue);
   box-shadow: 0px 4px 0px hsl(233, 59%, 56%);
+}
+
+.download-mac:hover{
+  background-color: hsl(233, 94%, 75%);
+  box-shadow: 0px 4px 0px hsla(233, 59%, 56%, 0.767);
+  cursor: pointer;
 }
 
 .mobile {
@@ -177,6 +189,10 @@ footer > a > img {
   color: var(--neutral-darkBlue);
 }
 
+.footer-nav > a:hover{
+  color: var(--primary-cyan);
+}
+
 .socials {
   display: flex;
   gap: 40px;
@@ -186,6 +202,10 @@ footer > a > img {
 .socials > a > ion-icon {
   color: var(--neutral-darkBlue);
   font-size: 2rem;
+}
+
+.socials > a > ion-icon:hover{
+  color: var(--primary-cyan);
 }
 
 .attribution {
@@ -202,18 +222,15 @@ footer > a > img {
   }
 
   .container {
-    background-color: antiquewhite;
     width: 1440px;
   }
 
   .wrapper {
-    background-color: beige;
     width: 80%;
     gap: 8rem;
   }
 
   main {
-    background-color: bisque;
     width: 55%;
   }
 
@@ -227,7 +244,6 @@ footer > a > img {
   }
 
   #track {
-    background-color: aqua;
     width: 55%;
     display: flex;
     flex-direction: column;
@@ -302,22 +318,28 @@ footer > a > img {
       "logo nav nav soci"
       "att att att att";
     margin-top: 0;
-    padding-top: 10px;
+    padding-top: 20px;
     gap: 0;
     row-gap: 10px;
   }
 
-  footer a:nth-child(1) {
+  .footer-logo{
     grid-area: logo;
     align-self: center;
     justify-self: center;
   }
 
   .footer-nav {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+    display: flex;
+    flex-direction: row;
+    flex-flow: column wrap;
     width: 80%;
-    background-color: blue;
+    height: 80px;
+    align-items: flex-start;
+    justify-content:flex-start;
+    column-gap: 20px;
+    row-gap: 15px;
+    padding-top: 10px;
     grid-area: nav;
   }
 
